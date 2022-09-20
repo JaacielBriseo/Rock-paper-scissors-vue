@@ -2,6 +2,7 @@
 import { ref, h } from "vue";
 import "../assets/index.css";
 import useLogic from '../composables/useLogic'
+import '../assets/fonts.css'
 
 export default {
   name: 'Options',
@@ -17,7 +18,7 @@ export default {
 
 <template>
   <div>
-    <p class="text-center text-xl m-8 font-bold">Please, select an option:</p>
+    <p class="text-center text-xl m-8 font-bold" id="fontSelect">Please, select an option:</p>
   </div>
   <div class="flex flex-wrap justify-center">
     <a @click="rockPick()"
@@ -37,14 +38,14 @@ export default {
     /></a>
   </div>
   <div class="text-center text-4xl">
-    <h4>
-      The computer chooses: <span class="text-red-700">{{ result }}</span>
+    <h4 id="fontComputer">
+      The computer chooses: <span class="text-red-600 font-extrabold underline" >{{ result }}</span>
       {{ state }}
     </h4>
   </div>
-  <div class="text-4xl m-5 md:text-center">
-    <h3 class="text-green-700">Wins:{{ wins }}</h3>
-    <h3 class="text-yellow-400">Draws:{{ draws }}</h3>
-    <h3 class="text-gray-600">Losses:{{ losses }}</h3>
+  <div class="text-4xl m-5 md:text-center" id="fontComputer">
+    <h3 class="text-green-700 ">Wins: {{ wins }}</h3>
+    <h3 class="text-yellow-400 ">Draws: {{ draws }}</h3>
+    <h3 class="text-gray-600 ">Losses: {{ losses }}</h3>
   </div>
 </template>

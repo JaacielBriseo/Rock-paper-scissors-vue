@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap');
+
+#fontComputer {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+#fontTitle {
+    font-family: 'Oswald', sans-serif;
+}
+#fontSelect{
+    font-family: 'Prompt', sans-serif;
+}

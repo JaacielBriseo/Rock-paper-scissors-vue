@@ -17,9 +17,7 @@ const useLogic = () => {
   return {
     wins,losses,draws,state,rock,paper,scissors,result,
 
-    computerPick : () => {
-        return Math.floor(Math.random() * 3);
-      },
+
       rockPick : () => {
         computerPick();
         if (computerPick() === rock) {

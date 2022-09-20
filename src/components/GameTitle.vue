@@ -7,5 +7,5 @@ defineProps({
 </script>
 
 <template>
-  <h1 class="underline text-center text-3xl m-8 font-bold">{{ msg }}</h1>
+  <h1 class="underline text-center text-3xl m-8 font-bold tracking-wider" id="fontTitle">{{ msg }}</h1>
 </template>
